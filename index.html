@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Manasa Boutique</title>
+
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <a href="index.html" class="logo">
+      <img src="images/logo.png" alt="Manasa Boutique Logo" />
+    </a>
+    <h1 class="site-title">MANASA BOUTIQUE</h1>
+
+<nav>
+  <ul>
+    <li><a href="index.html" class="active">Home</a></li>
+    <li><a href="gallery.html">Gallery</a></li>
+    <li><a href="services.html">Services</a></li>
+  </ul>
+</nav>
+
+
+
+  </div>
+</header>
+
+
+
+
+  <section class="hero">
+    <div class="slideshow">
+      <img src="images/cover1.jpg" class="slide active" />
+      <img src="images/cover2.jpg" class="slide" />
+      <img src="images/cover3.jpg" class="slide" />
+
+<div class="hero-text">
+  <h2><span class="line line1">Elegant</span></h2>
+  <h2><span class="line line2">Styles</span></h2>
+  <h2><span class="line line3">for Every</span></h2>
+  <h2><span class="line line4">Occasion</span></h2>
+</div>
+
+
+    </div>
+  </section>
+
+
+<section class="about">
+  <div class="about-container">
+    <div class="about-text">
+      <h2>About Us</h2>
+      <p>
+        At Manasa Boutique, we blend tradition with modern elegance, offering handcrafted outfits that tell your story through every stitch. With over a decade of experience and a team of skilled, passionate artisans, we ensure that each piece is crafted with precision, care, and authenticity. Every fabric we touch becomes a canvas of expression, celebrating individuality and timeless style.
+      </p>
+    </div>
+    <div class="about-img">
+      <img src="images/about.jpg" alt="About Us Image">
+    </div>
+  </div>
+</section>
+
+  <section class="contact" id="contact">
+  <h2>Contact Info</h2>
+  <div class="contact-flex">
+    <div class="contact-info">
+      <p><strong>Phone:</strong> +91 96187 70667</p>
+      <p><strong>Email:</strong> konkipudijyothi@gmail.com</p>
+      <p><strong>Address:</strong> Narsipatnam, India</p>
+    </div>
+</section>
+
+        <div class="whatsapp-float">
+          <a href="https://wa.me/919618770667?text=Hi%2C%20I%20want%20to%20know%20more%20about%20your%20boutique!" target="_blank" rel="noopener noreferrer">
+            <div class="whatsapp-chat">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" />
+              <span>Chat with us</span>
+            </div>
+          </a>
+        </div>
+
+        <div class="map-container">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d338.37179001725593!2d82.62177417526406!3d17.662862787407114!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1748530385075!5m2!1sen!2sin" 
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    const reveals = document.querySelectorAll('.reveal');
+
+    const options = {
+      threshold: 0.2
+    };
+
+    const observer = new IntersectionObserver(function (entries, observer) {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('active');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, options);	
+
+    reveals.forEach(reveal => {
+      observer.observe(reveal);
+    });
+  </script>
+
+  <footer>
+    <p>&copy; 2025 MANASA BOUTIQUE. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const slides = document.querySelectorAll('.slide');
+    let current = 0;
+
+    function showNextSlide() {
+      slides[current].classList.remove('active');
+      current = (current + 1) % slides.length;
+      slides[current].classList.add('active');
+    }
+
+    setInterval(showNextSlide, 2000);
+  </script>
+
+</body>
+</html>
