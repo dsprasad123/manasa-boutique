@@ -17,8 +17,8 @@ Welcome to the official website of **Manasa Boutique** – where tradition meets
 
 ## 🔗 Live Demo
 
-Check out the live site here: [https://your-username.github.io/manasa-boutique](https://dsprasad123.github.io/manasa-boutique)
+Check out the live site here: [https://dsprasad123.github.io/manasa-boutique](https://dsprasad123.github.io/manasa-boutique)
 
 ## 🛠️ Developed By
 
-This website was designed and developed by **Prasad**, inspired by creativity, tradition, and digital finesse.
+This website was designed and developed by **D.S.Prasad**, inspired by creativity, tradition, and digital finesse.
